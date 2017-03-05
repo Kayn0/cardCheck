@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Credit card validation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/cc-style.css">
+<link rel="stylesheet" type="text/css" href="css/animations.css">
+
+<script type="text/javascript" src="js/validator.js"></script>
+</head>
+
+<body onload="genNumbers()">
+	<div class="container">
+		<h1 class="page-title">Credit card validator</h1>
+	</div>
+
+	<div class="container">
+		<h3 class="card-header">Validate single card</h3>
+	  <div class="row">
+	  	<div class="card card-sml">
+	  		<div id="card-type">Credit Card</div>
+	  		<div id="valid"></div>
+		    <div id="info">
+
+		    	<input type="number" name="ccInput" placeholder="Enter your number here" id="cc-input" />
+		      <div class="date-wrapper">
+	          <div class="left-label">EXPIRES END</div>
+	          <div class="exp-date">
+	            <div class="date-title">MONTH/YEAR</div>
+	            <div class="date">06/19</div>
+	          </div>
+		      </div>
+		      <div id="card-name">John Doe</div>
+		    </div>
+	  	</div>
+			<div class="fab-btn fab-a-position" onClick="creditCardCheck('single');">Check</div>
+	  </div>
+	  <div id="single-validate"></div>
+	</div>
+
+	<div class="container">
+		<h3 class="card-header">Validate multiple cards</h3>
+		<div class="row">
+			<div id="multi-validate"></div>
+			<div id="outputContainer">
+				<div class="output"></div>
+			</div>
+		</div>
+
+		<div class="row bottom-space">
+			<div class="fab-btn fab-b-position" onClick="creditCardCheck('bulk');">
+				Check
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

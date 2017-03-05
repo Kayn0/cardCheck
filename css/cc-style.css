@@ -1,0 +1,157 @@
+.card {
+  background: #333;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  color: #fff;
+  font-family: 'Iceland', monospace;
+  font-size: 1.3em;
+  height: 210px;
+  margin: 32px 0;
+  max-width: 360px;
+  position: relative;
+  width: 100%;
+}
+
+.mini-card {
+  font-size: 1.2em;
+  height: 120px;
+  margin: 16px;
+  max-width: 200px;
+}
+
+.card.grid {
+  float: left;
+  min-width: 320px;
+}
+
+#card-type {
+  float: right;
+  font: 700 1.5em 'Open Sans', Arial, sans-serif;
+  margin: 15px 30px 45px 0;
+}
+
+#cc-input {
+  background: #333;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  margin: 0;
+  padding-left: 8px;
+  position: relative;
+  width: 90%;
+  z-index: 50;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+#info {
+  margin-left: 30px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+#cc-input,
+.month,
+.year,
+#card-name,
+.date {
+  position: relative;
+  z-index: 20;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+}
+
+.first-digits {
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.date-wrapper {
+  margin-top: 5px;
+  margin-left: 64px;
+  line-height: 1;
+}
+
+.date-wrapper .left-label {
+  display: inline-block;
+  float: left;
+  font-size: 7px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  width: 40px;
+}
+
+.date-wrapper .date {
+  display: block;
+  margin-top: -2px;
+  margin-left: 10px;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.date-wrapper .date-title {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  position: relative;
+  top: -2px;
+}
+
+/***** Input styling *****/
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#cc-input::-webkit-input-placeholder {
+  color: ghostwhite;
+}
+
+#cc-input::-moz-placeholder {
+  color: ghostwhite;
+}
+
+#cc-input:focus {
+  outline: none;
+}
+
+#cc-input:hover {
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+/***** Colour for multiple cards *****/
+#multi-validate .mini-card:nth-child(1n+1) {
+  background-color: #333;
+}
+
+#multi-validate .mini-card:nth-child(2n+2) {
+  background-color: #1693c3;
+  animation-delay: 0.2s;
+}
+
+#multi-validate .mini-card:nth-child(3n+3) {
+ background-color: #cfb53b;
+ animation-delay: 0.4s;
+}
+
+
+
+
+
+
